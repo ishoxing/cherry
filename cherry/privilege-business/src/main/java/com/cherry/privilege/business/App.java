@@ -1,4 +1,4 @@
-package com.cherry.privilege.api;
+package com.cherry.privilege.business;
 
 /**
  * Hello world!
