@@ -1,6 +1,9 @@
 package com.cherry.privilege.api.pojo;
 
-public class Menus {
+import java.io.Serializable;
+
+public class Menus implements Serializable {
+
 	private Integer id;
 
 	private String name;

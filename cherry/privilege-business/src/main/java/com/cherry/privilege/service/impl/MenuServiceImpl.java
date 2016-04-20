@@ -4,26 +4,40 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cherry.privilege.api.pojo.Menus;
+import com.cherry.privilege.api.service.MenuService;
 import com.cherry.privilege.dao.MenusMapper;
-import com.cherry.privilege.service.MenuService;
 
+/**
+ * menu操作
+ * 
+ * 1、新增一个menu 2、根据主键ID删除menu
+ * 
+ * @author Administrator
+ * @date 2016年4月19日 下午2:12:22
+ */
 @Service("menuService")
 public class MenuServiceImpl implements MenuService {
 	@Autowired
 	private MenusMapper menuDao;
 
-	public int saveMenu(Menus menu) {
+	public Menus getById(int id) {
 		// TODO Auto-generated method stub
-		menuDao.insert(menu);
-		
-		Menus menu1 = new Menus();
-		menu1.setName("tests");
-		menu1.setDescribe("descs");
-		menu1.setParent(0);
-		menu1.setUrl("urlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurlsurls");
-		menuDao.insert(menu1);
-		return 0;
+		return menuDao.getById(id);
 	}
 
+	public String saveMenu(Menus menu) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String delById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String uptMenu(Menus menu) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

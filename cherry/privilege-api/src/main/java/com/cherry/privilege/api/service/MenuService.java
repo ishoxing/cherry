@@ -1,8 +1,8 @@
-package com.cherry.privilege.dao;
+package com.cherry.privilege.api.service;
 
 import com.cherry.privilege.api.pojo.Menus;
 
-public interface MenusMapper {
+public interface MenuService {
 
 	/**
 	 * 根据主键ID，获取一个menu对象
@@ -35,4 +35,5 @@ public interface MenusMapper {
 	 * @return
 	 */
 	public String uptMenu(Menus menu);
+
 }

@@ -13,7 +13,7 @@
 
 	<description>spring settings</description>
 	<aop:aspectj-autoproxy proxy-target-class="true" />
-	<context:component-scan base-package="org.cherry.privilege" />
+	<context:component-scan base-package="com.cherry.privilege" />
 
 
 </beans>
